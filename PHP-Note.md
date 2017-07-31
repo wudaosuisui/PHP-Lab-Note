@@ -31,7 +31,21 @@
 ## 自定义网址根目录
 1. 新建文件夹：F/Dome
 1. Apache-》httpd.conf
-1. 查找
+1. 查找  DocumentRoot "f:/wamp/www/" 改为 "f:/Demo" 
+1. 向下滚动 找到 Directory "f:/wamp/www" 改为 "f:/Demo"
+1. 保存
+1. 重新启动所有服务
+## 更改web开发包
+1. f:wamp 
+1. 打开 wampmanager.ini
+1. 查找 menu.left 
+1. "WWW路径" 改为 "Demo路径"  "f/wamp/www" 改为 "f:/Dome"
+1. 保存
+1. 打开 wampmanager.tpl
+1. 查找 menu.left 
+1. "${w_wwwDirectory}" 改为 "Demo 目录"  ; "${wwwDir}" 改为 "F:/Dome";
+1. 保存
+1. 重启
 
 ## 
 # 简单语法
